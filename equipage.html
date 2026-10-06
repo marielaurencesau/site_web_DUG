@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les membres de l'équipage du Romano Fafard">
+    <title>L'équipage</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="./images/icones/fav-rf.png">
+
+</head>
+
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="entete_principal">
+        <div class="banniere d-flex justify-content-between align-items-center p-3">
+            <div class="banniere_titre d-flex justify-content-center gap-2 gap-lg-4">
+                <a class="d-flex" href="index.html">
+                    <img class="entete-icone" src="./images/icones/Romano-Fafard_10.png" alt="icone vaisseau">
+                </a>
+                <h1 class="banniere-titre text-m-nowrap">L'équipage</h1>
+            </div>
+            <div class="d-flex align-items-center justify-content-center pe-1  pe-xl-5">
+                <!--------navigation-étendu-------->
+                <div class="d-none d-m-flex d-lg-flex gap-5">
+
+                    <!--------piton Mission-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="index.html" aria-current="page" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center ">
+                                <img class="nav-bar-icon" src="images/icones/terre.png" alt="La Mission">
+                            </div>
+                            <div class="nav-bar-texte mb-0 fs-6 text-nowrap text-decoration-none">
+                                <p class="nav-p">La Mission</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------piton equipage-------->
+                    <div class="boite-item-nav page-active d-flex flex-column align-items-center position-relative">
+                        <a href="equipage.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/equipage.png" alt="equipage">
+                            </div>
+                            <div class="nav-bar-texte fs-6 text-nowrap text-decoration-none">
+                                <p>L'équipage</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------piton voyage-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="voyage.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/planete.png" alt="voyage">
+                            </div>
+                            <div class="nav-bar-texte fs-6 text-nowrap text-decoration-none">
+                                <p>Le voyage</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------piton rencontres-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="rencontres.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/alien.png" alt="rencontres">
+                            </div>
+                            <div class="nav-bar-texte nbt-long text-decoration-none">
+                                <p class="text-center">Les rencontres</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------piton citations-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="citations.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/citation.png" alt="citations">
+                            </div>
+                            <div class="nav-bar-texte nbt-long  text-decoration-none">
+                                <p class="text-center">Les citations</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--------le téléphone rouge-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="telephonerouge.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/telephone.png" alt="telephone rouge">
+                            </div>
+                            <div class="nav-bar-texte nbt-long text-nowrap text-decoration-none">
+                                <p class="text-center">Le téléphone <br> rouge</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------les épisodes-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="episodes.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/logo_icone.png" alt="telephone rouge">
+                            </div>
+                            <div class="nav-bar-texte nbt-long text-nowrap text-decoration-none">
+                                <p class="text-center">Les épisodes</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------piton vaisseau-------->
+                    <!--page vaisseau masquée pour le moment-->
+                    <div class="boite-item-nav d-none d-flex flex-column align-items-center position-relative">
+                        <a href="vaisseau.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/romanofafard.png" alt="vaisseau">
+                            </div>
+                            <div class="nav-bar-texte fs-6 text-nowrap text-decoration-none">
+                                <p>Le vaisseau</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--------menu déroulant-------->
+                <!--------bouton-menu-------->
+                <div class="btn-group">
+                    <button type="button" class="btn d-lg-none d-m-none" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-rocket h1 icone-menu-deroulant"></i>
+                    </button>
+                    <ul class="dropdown-menu menu-deroulant mt-3">
+                        <li><a class="dropdown-item" href="index.html">La Mission</a></li>
+                        <li><a class="dropdown-item menu-item-actif" href="equipage.html">L'équipage</a></li>
+                        <li><a class="dropdown-item" href="voyage.html">Le voyage</a></li>
+                        <li><a class="dropdown-item" href="rencontres.html">Les rencontres</a></li>
+                        <li><a class="dropdown-item" href="citations.html">Citations</a></li>
+                        <li><a class="dropdown-item" href="telephonerouge.html">Le téléphone rouge</a></li>
+                        <li><a class="dropdown-item" href="episodes.html">Les épisodes</a></li>
+                        <!--page vaisseau masquée pour le moment-->
+                        <li class="d-none"><a class="dropdown-item" href="vaisseau.html">Le vaisseau</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="equipage_page">
+        <div class="page-chapeau container d-flex justify-content-center align-items-center ">
+            <p class=" fs-3 mt-4 mb-4 w-75 text-center">
+                Les membres de l'équipage du Romano-Fafard sont le coeur de sa mission
+            </p>
+        </div>
+
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 mx-auto px-3">
+                    <article class="carte gauche">
+                        <div class="image_equipage">
+                            <img src="images/equipage/capitaine.jpg" alt="Capitaine Charle Patenaude">
+                        </div>
+
+                        <div class="information">
+                            <h2>Charle Patenaude</h2>
+                            <p class="poste">Poste :<span> Capitaine</span></p>
+                        </div>
+                        <a class="carte-bouton" href="#carte1">Voir Plus</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 mx-auto px-3">
+                    <article class="carte droit">
+                        <div class="information">
+                            <h2>Flavien Bouchard</h2>
+                            <p class="poste">Poste :<span> Opérateur radar et second officier</span></p>
+                        </div>
+                        <div class="image_equipage">
+                            <img src="images/equipage/flavien.jpg" alt="Flavien Bouchard">
+                        </div>
+                        <a class="carte-bouton" href="#carte2">Voir Plus</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 mx-auto px-3">
+                    <article class="carte gauche">
+                        <div class="image_equipage">
+                            <img src="images/equipage/Brad_Spitfire.png" alt="Brad_Spitfire">
+                        </div>
+
+                        <div class="information">
+                            <h2>Brad Spitfire</h2>
+                            <p class="poste">Poste :<span> Scientifique</span></p>
+                        </div>
+                        <a class="carte-bouton" href="#carte1">Voir Plus</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 mx-auto px-3">
+                    <article class="carte droit">
+                        <div class="information">
+                            <h2>Valence Leclerc</h2>
+                            <p class="poste">Poste :<span> Psychologue</span></p>
+                        </div>
+                        <div class="image_equipage">
+                            <img src="images/equipage/valence_galaxfilm2.jpg" alt="Flavien Bouchard">
+                        </div>
+                        <a class="carte-bouton" href="#carte1">Voir Plus</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 mx-auto px-3">
+                    <article class="carte gauche">
+                        <div class="image_equipage">
+                            <img src="images/equipage/bob.jpg" alt="Bob Dieudonné Marcelin">
+                        </div>
+
+                        <div class="information">
+                            <h2>Bob Dieudonné Marcelin</h2>
+                            <p class="poste">Poste :<span> Pilote</span></p>
+                        </div>
+                        <a class="carte-bouton" href="#carte1">Voir Plus</a>
+                    </article>
+                </div>
+            </div>
+
+          <div class="row justify-content-center">
+                <div class="col-12 col-md-8  mx-auto px-3">
+                    <article class="carte droit">
+                        <div class="information">
+                            <h2>Pétrolia Parenteau-Stanislavski</h2>
+                            <p class="poste">Poste :<span>Médecin
+                                    Électro-techno-informato-ingéno-constructo-invento-ticienne (en d'autres mots, femme
+                                    à tout faire!)</span></p>
+                        </div>
+                        <div class="image_equipage">
+                            <img src="images/equipage/petrolia.jpg" alt="Pétrolia Parenteau-Stanislavski">
+                        </div>
+                        <a class="carte-bouton" href="#carte1">Voir Plus</a>
+                    </article>
+                </div>
+            </div>
+
+           <div class="row justify-content-center">
+                <div class="col-12 col-md-8 mx-auto px-3">
+                    <article class="carte gauche">
+                        <div class="image_equipage">
+                            <img src="images/equipage/serge.png" alt="Serge">
+                        </div>
+
+                        <div class="information">
+                            <h2>Serge</h2>
+                            <p class="poste">Poste :<span> Defense et medecin</span></p>
+                        </div>
+                        <a class="carte-bouton" href="#carte1">Voir Plus</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 mx-auto px-3">
+                    <article class="carte droit">
+                        <div class="information">
+                            <h2>Falbo Gotta</h2>
+                            <p class="poste">Poste :<span>Mercenaire</span></p>
+                        </div>
+                        <div class="image_equipage">
+                            <img src="images/equipage/falbo.jpg" alt="Falbo Gotta">
+                        </div>
+                        <a class="carte-bouton" href="#carte1">Voir Plus</a>
+                    </article>
+                </div>
+            </div>
+
+           <div class="row justify-content-center">
+                <div class="col-12 col-md-8 mx-auto px-3">
+                    <article class="carte gauche">
+                        <div class="image_equipage">
+                            <img src="images/equipage/mirabela.jpg" alt="Mirabella Romario">
+                        </div>
+
+                        <div class="information">
+                            <h2>Mirabella Romario</h2>
+                            <p class="poste">Poste :<span>medecin</span></p>
+                        </div>
+                        <a class="carte-bouton" href="#carte1">Voir Plus</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer class="pied-page container-fluid pt-4 pb-2 mt-auto text-center">
+        <div class="pied-page-premier d-flex flex-column flex-md-row align-items-center justify-content-center gap-2 gap-md-4 mb-3">
+            <p class="my-auto">Tous droits réservés</p>
+            <p class="my-auto">@ Doyle-Sauvé-2026</p>
+            <p class="my-auto">
+                <a class="text-decoration-none lien-a-propos" href="#modaleApropos" data-bs-toggle="modal"
+                    data-bs-target="#modaleApropos" id="pied-link"> 
+                    À propos
+                </a>
+            </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-1">
+            <p class="pied-page-p">- photos et contenu tirés de la série et films Dans une galaxie près de vous -</p>
+        </div>
+
+    </footer>
+
+    <div class="modal fade" id="modaleApropos">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-black fs-3 fs-md-1">À propos</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" style="min-height: 44px;"></button>
+                </div>
+                <div class="modal-body text-black fs-6 fs-md-5">
+                    <p>Site web encyclopédique sur la série Dans une Galaxie près de chez vous</p>
+
+                    <p><strong>Par :</strong><br>
+                        Rémi Doyle<br>
+                        Marie Laurence Sauvé</p>
+
+                    <p><strong>Développé dans le cadre du cours :</strong><br>
+                        420-931-MA Programmation Web (Front-End)<br>
+                        gr. 25605 - Été 2026<br>
+                        <strong>Professeur:</strong> Ahmed Imed Eddine Rabah
+                    </p>
+
+                    <p>Collège de Maisonneuve<br>
+                        LEA.8F Sécurité des applications mobiles, Web et de bureau</p>
+
+                    <p>Tout image est libre de droit, certaine image sont des <br>
+                        captures d'écrans fait par les dévloppeurs lors de visionnement d'épisode et de films </p>
+
+                    <p>License unsplash <br>
+                        https://unsplash.com/</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modale capitaine" id="carte1">
+        <a class="modale-fond" href="equipage.html"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="equipage.html">&times;</a>
+            <div class="photo">
+                <img src="images/equipage/capitaine.jpg" alt="Capitaine Charle Patenaude">
+            </div>
+            <div class="info-droite">
+                <div>
+                    <h3>Charle Patenaude</h3>
+                    <p><span class="titre">Fonction:</span> Capitaine</p>
+                </div>
+                <div>
+                    <p><span class="titre">Alias:</span>Sonia Champoux (F2) <br> Charly (S2-E4) <br> Gunther (S2-E25)
+                    </p>
+                </div>
+                <div>
+                    <p><span class="titre">Matricule:</span> 15-27-A</p>
+                </div>
+                <div>
+                    <p><span class="titre">Nom de code:</span> Alpha 12-02 Orion</p>
+                </div>
+                <div>
+                    <p><span class="titre">Rang sur la liste:</span>3</p>
+                </div>
+                <div>
+                    <p><span class="titre">Famille:</span>Valence Leclerc (Amante) <br>Soeur(nom inconnu)(F1)
+                        <br>Nièce(nom inconnu)(F1) <br>Neveux(nom inconnu)(F1) </p>
+                </div>
+            </div>
+            <div class="info-gauche">
+                <div>
+                    <p><span class="titre">Naissance:</span> ~2007</p>
+                </div>
+                <div>
+                    <p><span class="titre">Origine:</span>Terre</p>
+                </div>
+                <div>
+                    <p><span class="titre">Espèce:</span>Humain</p>
+                </div>
+                <div>
+                    <p><span class="titre">Genre:</span>Masculin</p>
+                </div>
+            </div>
+            <div class="info-bas">
+                <div>
+                    <p><span class="titre">Bio:</span> <br>Informations sur la vie du capitaine. Informations sur la vie
+                        du capitaine. Informations sur la vie du capitaine.</p>
+                </div>
+                <div>
+                    <p><span class="titre">Faits saillants:</span> <br>Informations sur la vie du capitaine. Chose a
+                        savoir sur le capitaine</p>
+                </div>
+
+            </div>
+            <div class="nav-modale">
+                <a href="#carte9" class="btn-nav">Précédent</a>
+                <a href="#carte2" class="btn-nav">Suivant</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modale flavien" id="carte2">
+        <a class="modale-fond" href="equipage.html"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="equipage.html">&times;</a>
+            <div class="photo">
+                <img src="images/equipage/flavien.jpg" alt="Flavien Bouchard">
+            </div>
+            <div class="info-droite">
+                <div>
+                    <h1>Flavien Bouchard</h1>
+                    <p><span class="titre">Fonction:</span> Opérateur radar et second officier</p>
+                </div>
+                <div>
+                    <p><span class="titre">Alias:</span>Moufette timide <br>Aigle majestueux
+                    </p>
+                </div>
+                <div>
+                    <p><span class="titre">Matricule:</span> ?</p>
+                </div>
+                <div>
+                    <p><span class="titre">Nom de code:</span> ?</p>
+                </div>
+                <div>
+                    <p><span class="titre">Rang sur la liste:</span>7</p>
+                </div>
+                <div>
+                    <p><span class="titre">Famille:</span>Pétrolia Parenteau-Stanislavski (Amante) <br> Juliette
+                </div>
+            </div>
+            <div class="info-gauche">
+                <div>
+                    <p><span class="titre">Naissance:</span> ?</p>
+                </div>
+                <div>
+                    <p><span class="titre">Origine:</span>Terre</p>
+                </div>
+                <div>
+                    <p><span class="titre">Espèce:</span>Humain</p>
+                </div>
+                <div>
+                    <p><span class="titre">Genre:</span>Masculin</p>
+                </div>
+            </div>
+            <div class="info-bas">
+                <div>
+                    <p><span class="titre">Bio:</span> <br>Informations sur la vie de Flavien. Informations sur la vie de Flavien. 
+                        Informations sur la vie de Flavien. Informations sur la vie de Flavien.</p>
+                </div>
+                <div>
+                    <p><span class="titre">Faits saillants:</span> <br>Informations sur la vie de Flavien. Informations sur la vie de Flavien. Informations sur la vie de Flavien.</p>
+                </div>
+
+            </div>
+            <div class="nav-modale">
+                <a href="#carte1" class="btn-nav">Précédent</a>
+                <a href="#carte3" class="btn-nav">Suivant</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+        <script src="vendor/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="formulaire de contact pour envoyer un message ou une suggestion">
+    <title>Le téléphone rouge</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="./images/icones/fav-rf.png">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="entete_principal">
+        <div class="banniere d-flex justify-content-between align-items-center p-3">
+            <div class="banniere_titre d-flex justify-content-center gap-2 gap-lg-4">
+                <a class="d-flex" href="index.html">
+                    <img class="entete-icone" src="./images/icones/Romano-Fafard_10.png" alt="icone vaisseau">
+                </a>
+                <h1 class="banniere-titre long-titre">Le téléphone rouge</h1>
+            </div>
+            <div class="d-flex align-items-center justify-content-center pe-1  pe-xl-5">
+                <!--------navigation-étendu-------->
+                <div class="d-none d-md-flex gap-3 gap-lg-4">
+
+                    <!--------piton Mission-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="index.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center ">
+                                <img class="nav-bar-icon" src="images/icones/terre.png" alt="La Mission">
+                            </div>
+                            <div class="nav-bar-texte mb-0 fs-6 text-nowrap text-decoration-none">
+                                <p class="nav-p">La Mission</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------piton equipage-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="equipage.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/equipage.png" alt="equipage">
+                            </div>
+                            <div class="nav-bar-texte fs-6 text-nowrap text-decoration-none">
+                                <p>L'équipage</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------piton voyage-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="voyage.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/planete.png" alt="voyage">
+                            </div>
+                            <div class="nav-bar-texte fs-6 text-nowrap text-decoration-none">
+                                <p>Le voyage</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------piton rencontres-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="rencontres.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/alien.png" alt="rencontres">
+                            </div>
+                            <div class="nav-bar-texte nbt-long text-decoration-none">
+                                <p class="text-center">Les rencontres</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------piton citations-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="citations.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/citation.png" alt="citations">
+                            </div>
+                            <div class="nav-bar-texte nbt-long  text-decoration-none">
+                                <p class="text-center">Les citations</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--------le téléphone rouge-------->
+                    <div class="boite-item-nav page-active d-flex flex-column align-items-center position-relative">
+                        <a href="telephonerouge.html" aria-current="page" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/telephone.png" alt="telephone rouge">
+                            </div>
+                            <div class="nav-bar-texte nbt-long text-nowrap text-decoration-none">
+                                <p class="text-center">Le téléphone <br> rouge</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--------les épisodes-------->
+                    <div class="boite-item-nav d-flex flex-column align-items-center position-relative">
+                        <a href="episodes.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/logo_icone.png" alt="telephone rouge">
+                            </div>
+                            <div class="nav-bar-texte nbt-long text-nowrap text-decoration-none">
+                                <p class="text-center">Les épisodes</p>
+                            </div>
+                        </a>
+                    </div>        
+
+                    <!--------piton vaisseau-------->
+                    <!--page vaisseau masquée pour le moment-->
+                    <div class="boite-item-nav d-none d-flex flex-column align-items-center position-relative">
+                        <a href="vaisseau.html" class="nav-bar-lien w-100">
+                            <div class="nav-bar-icon-bloc d-flex justify-content-center">
+                                <img class="nav-bar-icon" src="images/icones/romanofafard.png" alt="vaisseau">
+                            </div>
+                            <div class="nav-bar-texte fs-6 text-nowrap text-decoration-none">
+                                <p>Le vaisseau</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--------menu déroulant-------->
+                <!--------bouton-menu-------->
+                <div class="btn-group">
+                    <button type="button" class="btn d-lg-none d-md-none" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-rocket h1 icone-menu-deroulant"></i>
+                    </button>
+                    <ul class="dropdown-menu menu-deroulant mt-3">
+                        <li><a class="dropdown-item" href="index.html">La Mission</a></li>
+                        <li><a class="dropdown-item" href="equipage.html">L'équipage</a></li>
+                        <li><a class="dropdown-item" href="voyage.html">Le voyage</a></li>
+                        <li><a class="dropdown-item" href="rencontres.html">Les rencontres</a></li>
+                        <li><a class="dropdown-item" href="citations.html">Citations</a></li>
+                        <li><a class="dropdown-item menu-item-actif" href="telephonerouge.html">Le téléphone rouge</a></li>
+                        <li><a class="dropdown-item" href="episodes.html">Les épisodes</a></li>
+                        <!--page vaisseau masquée pour le moment-->
+                        <li class="d-none"><a class="dropdown-item" href="vaisseau.html">Le vaisseau</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-chapeau container d-flex justify-content-center align-items-center ">
+            <p class=" fs-5 fs-md-3 mt-4 mb-4 w-100 w-md-75 text-center">
+                Bonjour et bienvenue au service d'assistance du Romano Fafard.
+                Vous avez 3 options. Pour un déménagement ou un changement d'adresse de
+                station orbitale, appuyez sur 1.
+                <br><br class="d-none dmd-blcok">Pour nous téléfaxer votre avis ou nous informer d'une erreur ou d'une
+                information non répertoriée, utilisez ce formulaire.
+            </p>
+        </div>
+        <div class="container-telehpone text-center" id="container-telehpone">
+            <div class="row align-items-start justify-content-center">
+                <div class="col-12 col-md-8 mx-auto text-center">
+                    <div class="d-flex flex-column flex-md-row gap-3 mt-5 mb-5 justify-content-center align-items-md-center w-100">
+                        <a class="btn-tel px-4 py-2 text-black text-decoration-none rounded-pill"
+                            href="#formulaire-telefaxe">Téléfaxer un message</a>
+                        <a class="btn-tel px-4 py-2 text-black text-decoration-none rounded-pill"
+                            href="#formulaire-ajout">Proposer un ajout/modification</a>
+                    </div>
+
+
+                    <!--Premier formulaire-->
+                    <form action="merci.html" method="get" class="formulaire-telefaxe mt-4 col-12 col-md-10 col-lg-8 mx-auto"
+                        id="formulaire-telefaxe">
+                        <fieldset>
+                            <div class="row align-items-center mb-1">
+                                <div class="col-12 col-md-4 text-end">
+                                    <label class="form-label m-0 fs-4" for="votre-nom">Nom :</label>
+                                </div>
+                                <div class="col-12 col-md-8 position-relative">
+                                    <input class="form-control rounded-pill" type="text" id="votre-nom" name="nom"
+                                        placeholder="Ex: Capitaine Patenaude" minlength="2" required>
+                                    <span class="validation"></span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-1">
+                                <div class="col-12 col-md-4 text-end">
+                                    <label class="form-label m-0 fs-6" for="votre-courriel">Courriel :</label>
+                                </div>
+                                <div class="col-12 col-md-8 position-relative">
+                                    <input class="form-control rounded-pill" type="email" id="votre-courriel"
+                                        name="email" placeholder="nom@romano-fafard.com" required>
+                                    <span class="validation"></span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-1">
+                                <div class="col-12 col-md-4 text-end">
+                                    <label class="form-label m-0" for="votre-sujet">Sujet :</label>
+                                </div>
+                                <div class="col-12 col-md-8 position-relative">
+                                    <input class="form-control rounded-pill" type="text" id="votre-sujet" name="sujet"
+                                        placeholder="Ex: Rapport d'anomalie" minlength="4" required>
+                                    <span class="validation"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-1 position-relative">
+                                <div class="col-12 text-start">
+                                    <label class="form-label mt-2" for="votre-message">Votre message :</label>
+                                </div>
+                                <div class="col-12">
+                                    <textarea id="votre-message" name="message" class="form-control rounded-5" rows="5"
+                                        placeholder="Écrivez votre téléfax ici..." minlength="15" required></textarea>
+                                    <span class="validation"></span>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4 mb-4">
+                                <button class="btn-tel btn-lg text-dark rounded-pill px-5 fw-bold py-3 py-md-2" type="submit" style="min-height: 45px;">Activer
+                                    le
+                                    Téléfax</button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <!--Deuxieme formulaire-->
+                    <form action="merci.html" method="get" class="formulaire-ajout mt-4 col-12 col-md-10 col-lg-8 mx-auto"
+                        id="formulaire-ajout">
+
+                        <fieldset class="mb-1 d-flex justify-content-center gap-3 ">
+                            <div class="form-check form-check-inline ">
+                                <input class="form-check-input" type="radio" id="ajout" name="ajout/modif"
+                                    value="ajout" required>
+                                <label class="form-check-label" for="ajout">Ajouter</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="modifier" name="ajout/modif"
+                                    value="modifier" required>
+                                <label class="form-check-label" for="modifier">Modification</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="row align-items-center mb-1">
+                                <div class="col-12 col-md-4 text-end">
+                                    <label class="form-label m-0" for="ajout-nom">Nom :</label>
+                                </div>
+                                <div class="col-12 col-md-8 position-relative">
+                                    <input class="form-control rounded-pill" type="text" id="ajout-nom" name="nom"
+                                        placeholder="Ex: Capitaine Patenaude" minlength="2" required>
+                                    <span class="validation"></span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-1">
+                                <div class="col-12 col-md-4 text-end">
+                                    <label class="form-label m-0" for="ajout-courriel">Courriel :</label>
+                                </div>
+                                <div class="col-12 col-md-8 position-relative">
+                                    <input class="form-control rounded-pill" type="email" id="ajout-courriel"
+                                        name="email" placeholder="nom@romano-fafard.com" required>
+                                    <span class="validation"></span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-1">
+                                <div class="col-12 col-md-4 text-end">
+                                    <label class="form-label m-0" for="ajout-sujet">Sujet :</label>
+                                </div>
+                                <div class="col-12 col-md-8 position-relative">
+                                    <input class="form-control rounded-pill" type="text" id="ajout-sujet" name="sujet"
+                                        placeholder="Ex: Rapport d'anomalie" minlength="4" required>
+                                    <span class="validation"></span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-1">
+                                <div class="col-12 col-md-4 text-end">
+                                    <label class="form-label m-0" for="section">Section : </label>
+                                </div>
+                                <div class="col-12 col-md-8 position-relative">
+                                    <select class="form-select rounded-pill" name="section" id="section" required>
+                                        <option value=""> Choisissez une section ...</option>
+                                        <option value="mission">La Mission</option>
+                                        <option value="rencontres">Les rencontres</option>
+                                        <option value="equipage">L'équipage</option>
+                                        <option value="voyage">Le voyage</option>
+                                        <option value="vaisseau">Le vaisseau</option>
+                                        <option value="citations">Citations</option>
+                                        <option value="tel_rouge"> Le téléphone rouge</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                <span class="validation"></span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-1">
+                                <div class="col-12 col-md-4 text-end">
+                                    <label class="form-label m-0" for="reference">Référence : </label>
+                                </div>
+                                <div class="col-12 col-md-8 position-relative">
+                                    <select class="form-select rounded-pill" name="reference" id="reference" required>
+                                        <option value=""> Choisir saisons / films ...</option>
+                                        <option value="s1e1">Saison 1 épisode 1</option>
+                                        <option value="s1e2">Saison 1 épisode 2</option>
+                                        <option value="s1e3">Saison 1 épisode 3</option>
+                                        <option value="s1e4">Saison 1 épisode 4</option>
+                                        <option value="s1e5">Saison 1 épisode 5</option>
+                                        <option value="s1e6">Saison 1 épisode 6</option>
+                                        <option value="s1e7">Saison 1 épisode 7</option>
+                                        <option value="s1e8">Saison 1 épisode 8</option>
+                                        <option value="s1e9"> Saison 1 épisode 9</option>
+                                        <option value="s1e10">Saison 1 épisode 10</option>
+                                        <option value="s1e11">Saison 1 épisode 11</option>
+                                        <option value="s1e12">Saison 1 épisode 12</option>
+                                        <option value="sie13">Saison 1 épisode 13</option>
+                                        <option value="s2e1">Saison 2 épisode 1</option>
+                                        <option value="s2e2">Saison 2 épisode 2</option>
+                                        <option value="s2e3">Saison 2 épisode 3</option>
+                                        <option value="s2e4">Saison 2 épisode 4</option>
+                                        <option value="s2e5">Saison 2 épisode 5</option>
+                                        <option value="s2e6">Saison 2 épisode 6</option>
+                                        <option value="s2e7">Saison 2 épisode 7</option>
+                                        <option value="s2e8">Saison 2 épisode 8</option>
+                                        <option value="s2e9"> Saison 2 épisode 9</option>
+                                        <option value="s2e10">Saison 2 épisode 10</option>
+                                        <option value="s2e11">Saison 2 épisode 11</option>
+                                        <option value="s2e12">Saison 2 épisode 12</option>
+                                        <option value="s2e13">Saison 2 épisode 13</option>
+                                        <option value="s2e14">Saison 2 épisode 14</option>
+                                        <option value="s2e15">Saison 2 épisode 15</option>
+                                        <option value="s2e16">Saison 2 épisode 16</option>
+                                        <option value="s2e17">Saison 2 épisode 17</option>
+                                        <option value="s2e18">Saison 2 épisode 18</option>
+                                        <option value="s2e19">Saison 2 épisode 19</option>
+                                        <option value="s2e20">Saison 2 épisode 20</option>
+                                        <option value="s2e21">Saison 2 épisode 21</option>
+                                        <option value="s2e22"> Saison 2 épisode 22</option>
+                                        <option value="s2e23">Saison 2 épisode 23</option>
+                                        <option value="s2e24">Saison 2 épisode 24</option>
+                                        <option value="s2e25">Saison 2 épisode 25</option>
+                                        <option value="s2e26">Saison 2 épisode 26</option>
+                                        <option value="s3e1">Saison 3 épisode 1</option>
+                                        <option value="s3e2">Saison 3 épisode 2</option>
+                                        <option value="s3e3">Saison 3 épisode 3</option>
+                                        <option value="s3e4">Saison 3 épisode 4</option>
+                                        <option value="s3e5">Saison 3 épisode 5</option>
+                                        <option value="s3e6">Saison 3 épisode 6</option>
+                                        <option value="s3e7">Saison 3 épisode 7</option>
+                                        <option value="s3e8">Saison 3 épisode 8</option>
+                                        <option value="s3e9"> Saison 3 épisode 9</option>
+                                        <option value="s3e10">Saison 3 épisode 10</option>
+                                        <option value="s3e11">Saison 3 épisode 11</option>
+                                        <option value="s3e12">Saison 3 épisode 12</option>
+                                        <option value="s3e13">Saison 3 épisode 13</option>
+                                        <option value="s4e1">Saison 4 épisode 1</option>
+                                        <option value="s4e2">Saison 4 épisode 2</option>
+                                        <option value="s4e3">Saison 4 épisode 3</option>
+                                        <option value="s4e4">Saison 4 épisode 4</option>
+                                        <option value="s4e5">Saison 4 épisode 5</option>
+                                        <option value="s4e6">Saison 4 épisode 6</option>
+                                        <option value="s4e7">Saison 4 épisode 7</option>
+                                        <option value="s4e8">Saison 4 épisode 8</option>
+                                        <option value="s4e9"> Saison 4 épisode 9</option>
+                                        <option value="s4e10">Saison 4 épisode 10</option>
+                                        <option value="s4e11">Saison 4 épisode 11</option>
+                                        <option value="s4e12">Saison 4 épisode 12</option>
+                                        <option value="s4e13">Saison 4 épisode 13</option>
+                                        <option value="film1">Film 1</option>
+                                        <option value="film2">Film 2</option>
+                                        <option value="autre2">Autre</option>
+                                    </select>
+                                <span class="validation"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-12 text-start">
+                                    <label class="form-label mt-2" for="votre-ajout">Décrivez l'ajout/changement proposé
+                                        :</label>
+                                </div>
+                                <div class="col-12 mt-2 position-relative">
+                                    <textarea id="votre-ajout" name="ajout" class="form-control rounded-5" rows="5"
+                                        placeholder="Écrivez votre ajout/changement ici..." minlength="15"
+                                        required></textarea>
+                                    <span class="validation"></span>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4 mb-4">
+                                <button class="btn-tel btn-lg text-dark rounded-pill px-5 fw-bold py-3 py-md-2" type="submit" style="min-height: 45px;">Activer
+                                    le
+                                    Téléfax</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Pied de page-->
+    <footer class="pied-page container-fluid pt-4 pb-2 mt-auto text-center">
+        <div class="pied-page-premier d-flex flex-column flex-md-row align-items-center justify-content-center gap-2 gap-md-4 mb-3">
+            <p class="my-auto">Tous droits réservés</p>
+            <p class="my-auto">@ Doyle-Sauvé-2026</p>
+            <p class="my-auto">
+                <a class="text-decoration-none lien-a-propos" href="#modaleApropos" data-bs-toggle="modal"
+                    data-bs-target="#modaleApropos" id="pied-link"> 
+                    À propos
+                </a>
+            </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-1">
+            <p class="pied-page-p">- photos et contenu tirés de la série et films Dans une galaxie près de vous -</p>
+        </div>
+
+    </footer>
+
+    <div class="modal fade" id="modaleApropos">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-black fs-3 fs-md-1">À propos</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" style="min-height: 44px;"></button>
+                </div>
+                <div class="modal-body text-black fs-6 fs-md-5">
+                    <p>Site web encyclopédique sur la série Dans une Galaxie près de chez vous</p>
+
+                    <p><strong>Par :</strong><br>
+                        Rémi Doyle<br>
+                        Marie Laurence Sauvé</p>
+
+                    <p><strong>Développé dans le cadre du cours :</strong><br>
+                        420-931-MA Programmation Web (Front-End)<br>
+                        gr. 25605 - Été 2026<br>
+                        <strong>Professeur:</strong> Ahmed Imed Eddine Rabah
+                    </p>
+
+                    <p>Collège de Maisonneuve<br>
+                        LEA.8F Sécurité des applications mobiles, Web et de bureau</p>
+
+                    <p>Tout image est libre de droit, certaine image sont des <br>
+                        captures d'écrans fait par les dévloppeurs lors de visionnement d'épisode et de films </p>
+
+                    <p>License unsplash <br>
+                        https://unsplash.com/</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
